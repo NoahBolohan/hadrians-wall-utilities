@@ -1,4 +1,4 @@
-# Hadrian's wall Utilities
+# Hadrian's Wall Utilities
 
 The web app can be found [here](https://noahbolohan.github.io/hadrians-wall-utilities/).
 
