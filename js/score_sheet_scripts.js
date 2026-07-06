@@ -45,7 +45,7 @@ $(document).ready(
     function() {
 
         $.each(
-            Array.from(Array(6), (e,i)=>i+2),
+            Array.from(Array(6), (e,i)=>i+1),
             function(key,value) {
                 $(`#col_button_${value}_players`).on(
                     "click",
@@ -560,4 +560,9 @@ function populate_form_data() {
     $("#submit_n_players").val(
         $("#row_score_sheet").data("n_players")
     )
+
+    // Difficulty
+    $("#submit_difficulty").val(
+        $("input[name='col_difficulty_radio']:checked").val()
+    );
 }
