@@ -566,3 +566,74 @@ function populate_form_data() {
         $("input[name='col_difficulty_radio']:checked").val()
     );
 }
+
+$(document).ready(
+
+    function () {
+        $("input[name='col_difficulty_radio']").on(
+            "change",
+            function() {
+                switch(
+                    this.value
+                ) {
+                    case "easy":
+
+                        $("#cell-input-easy").css(
+                            "background-color",
+                            "rgba(0,128,0,1)"
+                        );
+
+                        $("#cell-input-medium").css(
+                            "background-color",
+                            "rgba(255,255,0,0.1)"
+                        );
+
+                        $("#cell-input-hard").css(
+                            "background-color",
+                            "rgba(255,0,0,0.1)"
+                        );
+                        
+                        break;
+
+                    case "medium":
+
+                        $("#cell-input-easy").css(
+                            "background-color",
+                            "rgba(0,128,0,0.1)"
+                        );
+
+                        $("#cell-input-medium").css(
+                            "background-color",
+                            "rgba(255,255,0,1)"
+                        );
+
+                        $("#cell-input-hard").css(
+                            "background-color",
+                            "rgba(255,0,0,0.1)"
+                        );
+
+                        break;
+
+                    case "hard":
+
+                        $("#cell-input-easy").css(
+                            "background-color",
+                            "rgba(0,128,0,0.1)"
+                        );
+
+                        $("#cell-input-medium").css(
+                            "background-color",
+                            "rgba(255,255,0,0.1)"
+                        );
+
+                        $("#cell-input-hard").css(
+                            "background-color",
+                            "rgba(255,0,0,1)"
+                        );
+
+                        break;
+                }
+            }
+        );
+    }
+)

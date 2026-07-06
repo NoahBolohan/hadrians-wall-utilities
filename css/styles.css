@@ -473,13 +473,26 @@ input::placeholder {
     vertical-align: middle;
 }
 
-.cell-disabled {
-    background-color:rgba(var(--cell-disabled-color))!important;
-    vertical-align: middle;
-}
-
 .cell-total {
     background-color:rgba(var(--cell-total-color))!important;
     color:rgba(var(--font-color-headers))!important;
+    vertical-align: middle;
+}
+
+#cell-input-easy {
+    background-color:rgba(0,128,0,1);
+    accent-color: rgba(0,128,0,1);
+    vertical-align: middle;
+}
+
+#cell-input-medium {
+    background-color:rgba(255,255,0,0.1);
+    accent-color: rgba(255,255,0,1);
+    vertical-align: middle;
+}
+
+#cell-input-hard {
+    background-color:rgba(255,0,0,0.1);
+    accent-color: rgba(255,0,0,1);
     vertical-align: middle;
 }

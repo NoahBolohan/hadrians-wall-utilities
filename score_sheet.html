@@ -264,8 +264,6 @@
 
                 <div class="row justify-content-center align-items-center" style="height:7vh;" id="row_header">
 
-                    <div class="col header-background-7"></div>
-
                     <div class="row justify-content-between align-items-center" style="height:7vh;" id="row_header_1">
 
                         <div class="col-auto m-0 px-0 text-center h1">Score sheet</div>
@@ -283,28 +281,17 @@
                         <table class="col-12 mb-0 table score_sheet_table" style="height:5vh;">
                             <tbody>
                                 <tr style="height:5vh;">
-                                    <!-- <td class="cell-input score_sheet_cell_no_padding" align="right" style="border-right-style: hidden;">
-                                        <label for="radio_difficulty_choice_eaglet">3</label>
-                                    </td> -->
 
-                                    <td class="cell-input score_sheet_cell_no_padding" align="center" style="border-right-style: hidden;">
-                                        <input type="radio" id="radio_difficulty_choice_easy" name="col_difficulty_radio" value="easy" style="width:100%;" required/>
+                                    <td class="core_sheet_cell_no_padding" id="cell-input-easy" align="center">
+                                        <input type="radio" id="radio_difficulty_choice_easy" name="col_difficulty_radio" value="easy" style="width:100%;opacity:0;" checked required/>
                                     </td>
 
-                                    <!-- <td class="cell-input score_sheet_cell_no_padding" align="right" style="border-right-style: hidden;">
-                                        <label for="radio_difficulty_choice_eagle">4</label>
-                                    </td> -->
-
-                                    <td class="cell-input score_sheet_cell_no_padding" align="center" style="border-right-style: hidden;">
-                                        <input type="radio" id="radio_difficulty_choice_medium" name="col_difficulty_radio" value="medium" style="width:100%;"/>
+                                    <td class="score_sheet_cell_no_padding" id="cell-input-medium" align="center">
+                                        <input type="radio" id="radio_difficulty_choice_medium" name="col_difficulty_radio" value="medium" style="width:100%;opacity:0;"/>
                                     </td>
 
-                                    <!-- <td class="cell-input score_sheet_cell_no_padding" align="right" style="border-right-style: hidden;">
-                                        <label for="radio_difficulty_choice_eagle-eyed_eagle">5</label>
-                                    </td> -->
-
-                                    <td class="cell-input score_sheet_cell_no_padding" align="center">
-                                        <input type="radio" id="radio_difficulty_choice_hard" name="col_difficulty_radio" value="hard" style="width:100%;"/>
+                                    <td class="score_sheet_cell_no_padding" id="cell-input-hard" align="center">
+                                        <input type="radio" id="radio_difficulty_choice_hard" name="col_difficulty_radio" value="hard" style="width:100%;opacity:0;"/>
                                     </td>
                                 </tr>
                             </tbody>
