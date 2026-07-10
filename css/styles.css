@@ -480,7 +480,7 @@ input::placeholder {
 }
 
 #cell-input-easy {
-    background-color:rgba(0,128,0,1);
+    background-color:rgba(0,128,0,0.1);
     accent-color: rgba(0,128,0,1);
     vertical-align: middle;
 }
